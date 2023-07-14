@@ -8,5 +8,9 @@
     "editor.maxTokenizationLineLength": 2500,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-  }
+  },
+  
+  "editor.bracketPairColorization.enabled": true,
+  
+  "editor.guides.bracketPairs":"active"
 }
