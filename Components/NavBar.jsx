@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const NavBar = () => {
-  const router = useRouter;
+  const router = useRouter();
 
   return (
     <nav>
