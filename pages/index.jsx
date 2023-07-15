@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export async function getServerSideProps() {
   console.log('server');
 
