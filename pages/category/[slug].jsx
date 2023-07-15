@@ -1,10 +1,16 @@
 import Layout from '@/components/Layout';
 import SubLayout from '@/components/SubLayout';
+import { useRouter } from 'next/router';
 
 const CategorySlug = () => {
+  const router = useRouter();
+  const { slug, event, name } = router.query;
+
   return (
     <div>
-      <h1>Categoey</h1>
+      <h1>
+        Categoey {event} {name}
+      </h1>
     </div>
   );
 };
