@@ -16,12 +16,6 @@ export default function index({ time }) {
       <h1>HOME</h1>
       <div>
         <div>시간: {time}</div>
-        <Link style={{ display: 'block' }} href={'/csr'}>
-          CSR
-        </Link>
-        <Link style={{ display: 'block' }} href={'/ssg'}>
-          SSG
-        </Link>
       </div>
     </>
   );
