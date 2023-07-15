@@ -1,12 +1,20 @@
-import Link from 'next/link';
+import Layout from '@/components/Layout';
+import SubLayout from '@/components/SubLayout';
 
-const ssg = () => {
+const SSG = () => {
   return (
-    <>
+    <div>
       <h1>SSG</h1>
-      <Link href={'/'}>HOME</Link>
-    </>
+    </div>
   );
 };
 
-export default ssg;
+export default SSG;
+
+SSG.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      <SubLayout>{page}</SubLayout>
+    </Layout>
+  );
+};
